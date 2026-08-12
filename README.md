@@ -15,7 +15,10 @@ Embedded AI and robotics developer focused on turning algorithms into working ph
 | Robotics | ROS, Jetson Orin NX Super, LiDAR/depth-camera fusion, EKF, 3D SLAM, local obstacle planning, closed-loop chassis control |
 | IoT / cloud | BC28 NB-IoT, EC801E Cat-1 4G, HTTP POST, JSON, ThingsBoard, Alibaba Cloud IoT, telemetry and remote-command paths |
 | Hardware | SHT30, SGP30, BH1750, CCS811, NTC, relays, fans, humidifiers, TEC thermal modules, lithium charging and protection |
-| PCB / engineering tools | Lichuang EDA, schematic capture, placement/routing, power-tree design, DC-DC/LDO, Type-C, CH340C, CAD, Onshape, ANSYS Fluent, COMSOL, Python, Linux |
+| Multiphysics simulation | COMSOL electromagnetic-field, electric-potential, electrothermal and CFD/TEC multiphysics simulation; ANSYS Fluent; CAD/Onshape geometry and thermal-flow verification |
+| Scientific computing / AI | FEniCS finite-element solver, reduced-order modelling, latent-space acceleration, PINN, PINO, scientific ML and surrogate modelling |
+| AI research tooling | ScienceRAG, MiroFish, Hermes, Codex and structured technical-research workflows; Vibe coding for rapid prototyping, evaluation and iteration |
+| PCB / engineering tools | Lichuang EDA, schematic capture, placement/routing, power-tree design, DC-DC/LDO, Type-C, CH340C, Python and Linux |
 
 ## Beijing industry experience
 
@@ -29,15 +32,27 @@ Worked on an AI-controlled wearable thermal-management product that uses multi-m
 - **PCB implementation:** designed the thermal-control board from schematic and component/interface definition through PCB placement and routing; supported practical assembly and power-on work.
 - **Firmware bring-up:** ported, compiled and performed baseline debugging for MCU peripheral and temperature-control closed-loop code.
 - **Thermal verification:** participated in airflow/thermal design iteration using CAD assemblies and ANSYS Fluent simulation evidence.
+- **Multiphysics simulation:** built COMSOL workflows for electromagnetic field, electric-potential, electrothermal and CFD/TEC cases, connecting device geometry, material parameters, heat sources and boundary conditions.
+- **Scientific-computing App:** developed a TEC simulation App with FEniCS as the finite-element backend; used reduced-order modelling and latent-space representations to accelerate repeated design-space solves.
+- **Neural operators and scientific AI:** explored PINN/PINO surrogates and physics-informed learning for field reconstruction, parameter sweeps and fast thermal-response estimation.
+- **Research engineering:** used ScienceRAG and MiroFish for technical knowledge organization, scenario analysis and experiment planning; used Hermes and Codex for Vibe coding, debugging, refactoring and rapid validation.
 - **Scope note:** product schematics, production firmware and commercial data are proprietary and are not included in this public repository.
 
-| Thermal-control PCB layout | Wearable prototype |
+| Industry application context | Wearable sensor/airflow layout |
 | --- | --- |
-| ![Thermal-control PCB layout](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-pcb-layout.png) | ![AI thermal-control wearable prototype](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-prototype.jpg) |
+| ![Industry wearable application](experience/北京深镀科技-AI控温智能穿戴设备研发/industry-wearable-application.png) | ![Wearable sensor and airflow layout](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-sensor-layout.jpg) |
 
-| Wearable CAD assembly | Airflow simulation |
+| Wearable CAD assembly (retained) | Fluent thermal-flow simulation (retained) |
 | --- | --- |
 | ![Wearable CAD assembly](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-cad-assembly.png) | ![Wearable CFD simulation](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-cfd-simulation.png) |
+
+| Thermal simulation overview | Thermal simulation detail |
+| --- | --- |
+| ![Thermal simulation overview](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-simulation-overview.png) | ![Thermal simulation detail](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-simulation-detail.png) |
+
+| Thermal-control board front | Thermal-control board under test |
+| --- | --- |
+| ![Thermal-control board front](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-front.jpg) | ![Thermal-control board under test](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-test.jpg) |
 
 See the [Beijing internship technical summary](experience/北京深镀科技-AI控温智能穿戴设备研发/README.md).
 

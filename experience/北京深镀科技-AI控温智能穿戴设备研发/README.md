@@ -13,15 +13,44 @@ Contributed to the development of an AI-controlled wearable thermal-management p
 3. **Embedded bring-up** - ported, compiled and performed basic debugging for MCU peripherals and thermal closed-loop control code.
 4. **Prototype iteration** - supported wearable prototype assembly and fan/TEC system integration; used CAD and CFD evidence in design iteration.
 
+## New skills developed during the internship
+
+### COMSOL multiphysics and TEC simulation
+
+- Electromagnetic-field and electric-potential modelling for coupled device behaviour.
+- Electrothermal coupling for TEC modules, including Joule heating, Peltier heat transfer, thermal conduction and boundary-condition setup.
+- CFD and conjugate heat-transfer analysis for airflow channels, heat sinks, fans and wearable thermal paths.
+- Parameterized geometry/material/boundary-condition studies for design comparison and thermal-management iteration.
+
+### FEniCS-based TEC simulation App
+
+Built a TEC simulation App with FEniCS as the finite-element solving layer. To make repeated interactive studies practical, the workflow combines reduced-order modelling with latent-space representations, allowing the App to approximate or accelerate expensive multiphysics solves while retaining a physics-based solver path for reference and correction.
+
+### Physics-informed scientific AI
+
+Applied or studied PINN and PINO approaches for physics-constrained field reconstruction, surrogate modelling and fast parameter-sweep prediction. These methods connect PDE residuals, boundary conditions and measured/simulated data instead of treating the TEC field as a purely black-box regression task.
+
+### Research and Vibe coding workflow
+
+Comfortable using ScienceRAG and MiroFish for technical literature/knowledge organization and scenario analysis, and Hermes/Codex for Vibe coding, rapid implementation, debugging, refactoring and iterative validation of scientific-computing tools.
+
 ## Public evidence
 
-| Thermal-control PCB layout | Wearable prototype |
+| Industry application context | Wearable sensor/airflow layout |
 | --- | --- |
-| ![Thermal-control PCB layout](thermal-control-pcb-layout.png) | ![Wearable prototype](wearable-prototype.jpg) |
+| ![Industry wearable application](industry-wearable-application.png) | ![Wearable sensor and airflow layout](wearable-sensor-layout.jpg) |
 
-| Wearable CAD assembly | Airflow/thermal CFD simulation |
+| Wearable CAD assembly (retained) | Fluent thermal-flow simulation (retained) |
 | --- | --- |
 | ![Wearable CAD assembly](wearable-cad-assembly.png) | ![Wearable CFD simulation](wearable-cfd-simulation.png) |
+
+| Thermal simulation overview | Thermal simulation detail |
+| --- | --- |
+| ![Thermal simulation overview](thermal-simulation-overview.png) | ![Thermal simulation detail](thermal-simulation-detail.png) |
+
+| Thermal-control board front | Thermal-control board under test |
+| --- | --- |
+| ![Thermal-control board front](thermal-control-board-front.jpg) | ![Thermal-control board under test](thermal-control-board-test.jpg) |
 
 ## Confidentiality
 
