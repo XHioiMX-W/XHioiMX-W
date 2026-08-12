@@ -34,6 +34,16 @@ Applied or studied PINN and PINO approaches for physics-constrained field recons
 
 Comfortable using ScienceRAG and MiroFish for technical literature/knowledge organization and scenario analysis, and Hermes/Codex for Vibe coding, rapid implementation, debugging, refactoring and iterative validation of scientific-computing tools.
 
+## Toolchain and public evidence map
+
+| Layer | Tools / methods | Public evidence |
+| --- | --- | --- |
+| Geometry and thermal-flow | CAD/Onshape, ANSYS Fluent, COMSOL CFD and conjugate heat transfer | Wearable CAD assembly, Fluent simulation, thermal overview/detail |
+| Electrical and thermal hardware | Lichuang EDA, schematic/PCB layout, TEC interfaces, NTC and fan connections | Thermal-control PCB layout, cropped front view and under-test view |
+| Scientific computing | FEniCS finite elements, reduced-order modelling, latent-space acceleration | Technical description of the TEC simulation App |
+| Scientific AI | PINN/PINO, physics constraints, surrogate/field reconstruction | Non-confidential workflow summary; no proprietary model files |
+| Research engineering | ScienceRAG, MiroFish, Hermes, Codex, Vibe coding | Reproducible public narrative; commercial data excluded |
+
 ## Public evidence
 
 <table>

@@ -11,12 +11,25 @@ Field pest/disease inspection needs mobility, edge vision, environmental sensing
 Camera -> Raspberry Pi/Linux -> YOLOv5-Lite -> ONNX Runtime + OpenCV
 STM32F103C8T6 <- sensors/actuators -> BC28 NB-IoT -> Alibaba Cloud IoT
 
+## Runtime data path
+
+1. The camera captures field imagery and the Raspberry Pi prepares frames for edge inference.
+2. YOLOv5-Lite produces a pest/disease result locally; ONNX Runtime and OpenCV keep the deployment independent of a cloud inference round trip.
+3. The STM32 node samples environmental sensors, applies device-state logic and drives the local actuators.
+4. BC28 publishes telemetry and receives remote commands through Alibaba Cloud IoT for supervision outside the field.
+
 ## Implementation
 
 1. YOLOv5 was slimmed by removing Focus and using YOLOv5-Lite. The exported ONNX model runs with ONNX Runtime and OpenCV on Raspberry Pi Linux.
 2. STM32F103C8T6 owns sensor sampling, actuator drivers, state machine and serial debug. BC28 carries telemetry and cloud commands over NB-IoT.
 3. The sensing set covers air temperature, humidity, pressure, soil moisture and illumination. The open-hub wheel improves mobility in soft fields.
 4. I worked across the IoT link, embedded inference deployment, control integration and mechanical/kinematic validation.
+
+## Validation focus
+
+- Checked the exported model through Raspberry Pi Linux inference and OpenCV result rendering.
+- Verified the serial/debug path between the STM32 control layer and the sensing/actuation modules.
+- Used the architecture, detection and prototype images as evidence for the complete edge-to-cloud workflow.
 
 ## My role
 
