@@ -38,9 +38,16 @@ Worked on an AI-controlled wearable thermal-management product that uses multi-m
 - **Research engineering:** used ScienceRAG and MiroFish for technical knowledge organization, scenario analysis and experiment planning; used Hermes and Codex for Vibe coding, debugging, refactoring and rapid validation.
 - **Scope note:** product schematics, production firmware and commercial data are proprietary and are not included in this public repository.
 
-| Industry application context | Wearable sensor/airflow layout |
-| --- | --- |
-| ![Industry wearable application](experience/北京深镀科技-AI控温智能穿戴设备研发/industry-wearable-application.png) | ![Wearable sensor and airflow layout](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-sensor-layout.jpg) |
+<table>
+  <tr>
+    <th width="65%">Industry application context</th>
+    <th width="35%">Wearable sensor/airflow layout</th>
+  </tr>
+  <tr>
+    <td width="65%"><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/industry-wearable-application.png" alt="Industry wearable application" width="100%"></td>
+    <td width="35%" align="center"><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-sensor-layout-rotated.jpg" alt="Wearable sensor and airflow layout rotated 90 degrees counter-clockwise" width="72%"></td>
+  </tr>
+</table>
 
 | Wearable CAD assembly (retained) | Fluent thermal-flow simulation (retained) |
 | --- | --- |

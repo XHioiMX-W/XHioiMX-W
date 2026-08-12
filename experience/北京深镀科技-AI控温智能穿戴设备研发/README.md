@@ -36,9 +36,16 @@ Comfortable using ScienceRAG and MiroFish for technical literature/knowledge org
 
 ## Public evidence
 
-| Industry application context | Wearable sensor/airflow layout |
-| --- | --- |
-| ![Industry wearable application](industry-wearable-application.png) | ![Wearable sensor and airflow layout](wearable-sensor-layout.jpg) |
+<table>
+  <tr>
+    <th width="65%">Industry application context</th>
+    <th width="35%">Wearable sensor/airflow layout</th>
+  </tr>
+  <tr>
+    <td width="65%"><img src="industry-wearable-application.png" alt="Industry wearable application" width="100%"></td>
+    <td width="35%" align="center"><img src="wearable-sensor-layout-rotated.jpg" alt="Wearable sensor and airflow layout rotated 90 degrees counter-clockwise" width="72%"></td>
+  </tr>
+</table>
 
 | Wearable CAD assembly (retained) | Fluent thermal-flow simulation (retained) |
 | --- | --- |
