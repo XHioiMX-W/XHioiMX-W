@@ -136,6 +136,8 @@ Independently led the full-stack design of a distributed inspection robot for co
 
 ![Thesis robot](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system.png)
 
+![Annotated thesis robot system showcase](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system-annotated.jpg)
+
 See [毕业设计项目资料](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/README.md).
 
 ## Education and recognition
