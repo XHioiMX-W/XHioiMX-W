@@ -1,4 +1,6 @@
-# Thesis: wireless environmental monitoring and early-warning robot
+# 基于无线网络的环境监测预警机器人测控系统设计
+
+**Undergraduate thesis | Wireless environmental monitoring and early-warning robot control system**
 
 ## Project statement
 
@@ -45,6 +47,12 @@ ESP32-S3 voice HMI -> dual mic + ES7210 + QSPI touch -> LLM agent
 - Sliding window + temperature rate + static thresholds + trend fitting for anomaly localization and over-limit alarms.
 - 1 s periodic acquisition, OLED page rotation, sensor calibration and HTTP POST JSON telemetry.
 - FreeRTOS-based long-lived full-duplex voice interaction and LLM agent control on ESP32-S3.
+
+## My role
+
+- Independently led the end-to-end hardware and software development.
+- Designed, routed, assembled and powered up the environmental IoT mainboard and AI voice multimodal board.
+- Developed lower-layer sensing and voice-interaction software, and integrated ROS mapping/navigation, 4G telemetry and cloud alarms.
 
 ## Evidence
 

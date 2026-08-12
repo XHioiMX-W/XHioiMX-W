@@ -2,78 +2,118 @@
 
 **Embedded AI / Robotics / PCB Hardware / IoT Systems**
 
-Embedded and robotics developer with a Building Electrical and Intelligent Systems background. Graduated from Tianjin Chengjian University in 2026 (major rank 4/60); currently pursuing Control Science and Engineering at Beijing University of Civil Engineering and Architecture. I build complete prototypes that connect machine learning, MCU firmware, circuit design, PCB layout, sensing, actuation, cloud telemetry and robot motion.
+Embedded AI and robotics developer focused on turning algorithms into working physical systems: MCU firmware, PCB hardware, sensing, actuation, edge inference, cloud telemetry and mobile robots. Graduated from Tianjin Chengjian University in 2026 (Building Electrical and Intelligent Systems, rank 4/60); currently pursuing an MSc in Control Science and Engineering at Beijing University of Civil Engineering and Architecture.
 
-> Curated from my resume, project reports, thesis, presentations and hardware evidence. Vendor SDKs, CMSIS, FreeRTOS and board packages are dependencies/reference material, not claimed as original work.
+> This public portfolio is curated from my resume, project reports, thesis, presentations and hardware evidence. Vendor SDKs, CMSIS, FreeRTOS and board-support packages are dependencies/reference material, not claimed as original work. Contact details are limited to email.
 
 ## Technical map
 
-| Area | Technologies |
+| Area | Technologies and engineering scope |
 | --- | --- |
-| Embedded | STM32F0/F1/F4, ESP32-S3, 51 MCU, C/C++, FreeRTOS, STM32 HAL, Keil, STM32CubeIDE |
-| AI / vision | YOLOv5-Lite, ONNX Runtime, OpenCV, CNN, LSTM, time-series forecasting, edge deployment |
-| Robotics | ROS, Jetson Orin NX Super, SLAM, EKF, sensor fusion, local planning, closed-loop chassis control |
-| IoT | NB-IoT, EC801E 4G, BC28, HTTP POST, JSON, ThingsBoard, Alibaba Cloud IoT |
-| Hardware | SHT30, SGP30, BH1750, CCS811, NTC, relays, fan/humidifier, lithium charging |
-| PCB / tools | Lichuang EDA, schematic, PCB placement/routing, DC-DC/LDO, CH340C, Type-C, TP5100, Python, Linux, CAD, Onshape, ANSYS, COMSOL |
+| Embedded | STM32F0/F1/F4, ESP32-S3, 51 MCU, C/C++, FreeRTOS, STM32 HAL, Keil, STM32CubeIDE, UART/I2C/SPI/PWM/ADC, board bring-up |
+| AI / edge computing | YOLOv5-Lite, ONNX Runtime, OpenCV, CNN, LSTM, time-series forecasting, data windowing, residual analysis, Raspberry Pi Linux deployment |
+| Robotics | ROS, Jetson Orin NX Super, LiDAR/depth-camera fusion, EKF, 3D SLAM, local obstacle planning, closed-loop chassis control |
+| IoT / cloud | BC28 NB-IoT, EC801E Cat-1 4G, HTTP POST, JSON, ThingsBoard, Alibaba Cloud IoT, telemetry and remote-command paths |
+| Hardware | SHT30, SGP30, BH1750, CCS811, NTC, relays, fans, humidifiers, TEC thermal modules, lithium charging and protection |
+| PCB / engineering tools | Lichuang EDA, schematic capture, placement/routing, power-tree design, DC-DC/LDO, Type-C, CH340C, CAD, Onshape, ANSYS Fluent, COMSOL, Python, Linux |
+
+## Beijing industry experience
+
+### 北京深镀科技 | 智能硬件实习生
+
+**2026.02-2026.07 | AI 控温智能穿戴设备研发**
+
+Worked on an AI-controlled wearable thermal-management product that uses multi-modal sensing and thermoelectric/airflow hardware to form a temperature-control loop. The product was exhibited at CES 2026 and entered partial delivery.
+
+- **Mechanical integration:** completed 3D assembly modelling and feasibility validation for the wearable structure; coordinated component placement, air-path packaging and thermal-design constraints with mechanical and hardware work.
+- **PCB implementation:** designed the thermal-control board from schematic and component/interface definition through PCB placement and routing; supported practical assembly and power-on work.
+- **Firmware bring-up:** ported, compiled and performed baseline debugging for MCU peripheral and temperature-control closed-loop code.
+- **Thermal verification:** participated in airflow/thermal design iteration using CAD assemblies and ANSYS Fluent simulation evidence.
+- **Scope note:** product schematics, production firmware and commercial data are proprietary and are not included in this public repository.
+
+| Thermal-control PCB layout | Wearable prototype |
+| --- | --- |
+| ![Thermal-control PCB layout](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-pcb-layout.png) | ![AI thermal-control wearable prototype](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-prototype.jpg) |
+
+| Wearable CAD assembly | Airflow simulation |
+| --- | --- |
+| ![Wearable CAD assembly](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-cad-assembly.png) | ![Wearable CFD simulation](experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-cfd-simulation.png) |
+
+See the [Beijing internship technical summary](experience/北京深镀科技-AI控温智能穿戴设备研发/README.md).
 
 ## Three main projects
 
-### 1. Huiyan Shizhu: YOLO crop pest/disease inspection robot
+### 1. “慧眼识株”–基于YOLO机器视觉农作物病虫害智能识别监测预警农保机器人
 
-2024.09-2024.11. A low-cost field robot combining Raspberry Pi vision inference, STM32 sensing/actuation and NB-IoT telemetry.
+**2024.09-2024.11 | YOLO crop pest/disease inspection and early-warning agricultural-protection robot**
 
-- YOLOv5 was slimmed by removing the Focus block and using YOLOv5-Lite; ONNX Runtime + OpenCV run the exported model on Raspberry Pi Linux.
-- STM32F103C8T6 handles sensor acquisition, actuator control and device state; BC28/NB-IoT uploads data and receives cloud commands through Alibaba Cloud IoT.
-- Senses air temperature, humidity, pressure, soil moisture and illumination; an open-hub wheel improves field mobility and crop protection.
-- I owned the IoT data path, embedded YOLO deployment and control-layer integration, and supported mechanical/kinematic validation.
-- Awards: provincial second prize in Tianjin New Engineering Practice Innovation Competition; first prize in the university Electronic Design Innovation Practice Competition; utility model patent application in 2025.
+Designed as a low-cost field robot that joins Raspberry Pi vision inference, STM32 sensing/actuation and NB-IoT connectivity for crop disease/pest inspection.
 
-![YOLO detection result](projects/project-1-yolo/yolo-detection-result.png)
+- **Vision pipeline:** reduced YOLOv5 by removing the Focus block and adopted YOLOv5-Lite; exported inference runs with ONNX Runtime and OpenCV on Raspberry Pi Linux.
+- **Control and sensing:** STM32F103C8T6 performs sensor acquisition, actuator control, device-state handling and serial debugging. The sensing set covers air temperature, humidity, pressure, soil moisture and illumination.
+- **IoT path:** BC28 NB-IoT forwards telemetry and receives cloud commands through Alibaba Cloud IoT, connecting the field platform to remote supervision.
+- **My contribution:** owned IoT data-path work, embedded YOLO deployment and control-layer integration; supported robot appearance, inverse kinematics and mechanical-stability validation.
+- **Outcome:** provincial second prize in the Tianjin New Engineering Practice Innovation Competition; first prize in the university Electronic Design Innovation Practice Competition; utility-model patent application in 2025.
 
-See [project-1-yolo](projects/project-1-yolo/README.md).
+| Edge-vision architecture | Field robot prototype |
+| --- | --- |
+| ![YOLO architecture](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/yolo-architecture.png) | ![Field robot](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/field-robot.png) |
 
-### 2. Zhijing Suiyu: LSTM+CNN indoor environment control robot
+![YOLO detection result](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/yolo-detection-result.png)
 
-2024.11-2025.03. A closed loop from sensing to time-series prediction to fan/humidifier actuation, implemented on STM32 and custom PCBs.
+See [“慧眼识株”项目资料](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/README.md).
 
-- LSTM+CNN models temperature, humidity and CO2 sequences; the workflow includes preprocessing, windowing, train/validation/test splits, residual analysis and embedded tuning.
-- Sensor, controller, power and actuator boards are separated for testability. STM32F1/F4 controls SHT30/SGP30 devices over I2C and drives PWM/relay outputs.
-- Forecast-based feed-forward control anticipates environmental changes instead of relying only on static thresholds; periodic tasks and FreeRTOS organize the control layer.
-- Cloud telemetry and dashboard plots expose temperature/humidity residuals for tuning and validation.
-- Participated in a National Natural Science Foundation project proposal and R&D; invention patent application in 2025.
+### 2. 科技发明制作-12-智境·随驭-AI 驱动的室内环境个性化调控机器人
 
-![Environment dashboard](projects/project-2-lstm/dashboard.png)
+**2024.11-2025.03 | LSTM+CNN indoor environment personalization and control robot**
 
-See [project-2-lstm](projects/project-2-lstm/README.md).
+Built a sensing-prediction-actuation control loop on custom PCBs and STM32 controllers. The project shifts control from a static-threshold response toward forecast-based feed-forward regulation.
 
-### 3. Thesis: wireless environmental monitoring and early-warning robot control system
+- **Prediction model:** LSTM+CNN models temperature, humidity and CO2 time series. The training workflow includes preprocessing, windowing, normalization, train/validation/test splits and residual analysis.
+- **Multi-board hardware:** sensor, controller, power and fan/humidifier actuator boards are separated for testability and noise isolation. STM32F1/F4 control SHT30/SGP30 over I2C and drive PWM/relay outputs.
+- **Control software:** periodic tasks and FreeRTOS organize acquisition, control and fault handling; forecast output is used to anticipate environmental change rather than only react after an over-limit event.
+- **My contribution:** independently completed mobile-chassis development, multi-sensor circuit integration, PCB design, MCU programming and end-to-end commissioning; deployed and tuned the LSTM+CNN prediction workflow.
+- **Outcome:** contributed to a 2025 National Natural Science Foundation proposal/R&D effort; invention-patent application filed in 2025.
 
-2026.01-2026.06. Independently led a distributed multi-controller system for complex walls and special service environments, awarded Excellent Graduation Design at university level.
+| Sensor PCB | Power PCB | Fan/humidifier actuator PCB |
+| --- | --- | --- |
+| ![Sensor PCB](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/sensor-pcb.png) | ![Power PCB](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/power-pcb.png) | ![Actuator PCB](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/actuator-pcb.png) |
 
-- Four layers: Edge (Jetson Orin NX Super), Control (STM32), Perception (SHT30/SGP30/depth camera/LiDAR) and Cloud (ThingsBoard).
-- ROS fuses C32 multi-line LiDAR point clouds with Orbbec Gemini 2 depth streams. EKF handles time-space alignment and pose estimation for 3D SLAM and local obstacle planning.
-- STM32F407VET6 gateway implements a surface/deep dual T/RH scheme and combines sliding window, temperature rate, static thresholds and trend fitting for anomaly localization and over-limit alarms.
-- EC801E Cat-1 4G sends JSON telemetry by HTTP POST to ThingsBoard for cross-region transparent transmission, time-series storage and visual alarms.
-- ESP32-S3-WROOM-2-N32R16V with dual microphones, ES7210 ADC and a 1.85-inch circular QSPI touch display provides local wake-up, sound-source localization, full-duplex voice interaction and LLM agent control.
-- I designed, assembled and powered up the STM32F407 environmental IoT board and the ESP32-S3 AI voice board, including power tree, interfaces, placement and routing.
+| System architecture | Cloud dashboard |
+| --- | --- |
+| ![System architecture](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/architecture.png) | ![Environment dashboard](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/dashboard.png) |
+
+See [智境·随驭项目资料](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/README.md).
+
+### 3. 基于无线网络的环境监测预警机器人测控系统设计
+
+**2026.01-2026.06 | Undergraduate thesis | University-level Excellent Graduation Design**
+
+Independently led the full-stack design of a distributed inspection robot for complex walls and special service environments. The delivered system combines 3D perception, multi-sensor environmental monitoring, 4G alarms, autonomous navigation and an on-device AI voice interface.
+
+- **Four-layer topology:** Jetson Orin NX Super for edge decision-making; STM32 control nodes; SHT30/SGP30, depth-camera and LiDAR perception; ThingsBoard cloud telemetry and alarms.
+- **Robot software:** ROS fuses C32 multi-line LiDAR point clouds and Orbbec Gemini 2 depth streams. EKF manages time-space alignment and pose estimation for 3D SLAM and local obstacle planning.
+- **Environmental monitoring:** an STM32F407VET6 gateway uses surface/deep dual temperature-humidity sensing. Sliding windows, temperature rate, static thresholds and trend fitting support anomaly localization and over-limit alarms.
+- **Wide-area connectivity:** EC801E Cat-1 4G publishes JSON telemetry by HTTP POST to ThingsBoard for remote time-series storage, visualization and alarm delivery.
+- **Voice HMI:** ESP32-S3-WROOM-2-N32R16V, dual microphones, ES7210 ADC and a 1.85-inch circular QSPI touch display provide wake-up, sound-source localization, full-duplex interaction and LLM-agent control. FreeRTOS supports the long-lived edge connection.
+- **My contribution:** designed, assembled and powered up the STM32F407 environmental IoT mainboard and ESP32-S3 AI voice board, including power-tree design, interfaces, component placement and routing; developed the sensor and voice-system lower-layer code.
 
 #### PCB and robot showcase
 
-| Environmental IoT mainboard | AI voice board |
+| Environmental IoT mainboard | AI voice multimodal board |
 | --- | --- |
-| ![Sensor PCB layout](projects/thesis/sensor-board-layout.png) | ![Voice PCB layout](projects/thesis/voice-board-layout.png) |
-| ![Sensor board assembled](projects/thesis/sensor-board-assembled.png) | ![Voice board assembled](projects/thesis/voice-board-assembled.png) |
+| ![Sensor PCB layout](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/sensor-board-layout.png) | ![Voice PCB layout](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/voice-board-layout.png) |
+| ![Sensor board assembled](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/sensor-board-assembled.png) | ![Voice board assembled](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/voice-board-assembled.png) |
 
-![Thesis robot](projects/thesis/robot-system.png)
+![Thesis robot](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system.png)
 
-See [thesis](projects/thesis/README.md).
+See [毕业设计项目资料](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/README.md).
 
-## Experience and awards
+## Education and recognition
 
-- Beijing Logic Technology | Intelligent Hardware Intern, 2026.02-2026.07: AI temperature-control wearable; 3D assembly validation, thermal-control PCB, component selection, MCU peripheral firmware porting and bring-up. Product exhibited at CES 2026 and entered partial delivery.
-- Tianjin Chengjian University, Building Electrical and Intelligent Systems, BEng, 2022.09-2026.07, rank 4/60.
-- CET-6; three consecutive years of university scholarships; Excellent Student and Excellent Graduate.
+- Beijing University of Civil Engineering and Architecture, Control Science and Engineering, MSc, 2026.07-present.
+- Tianjin Chengjian University, Building Electrical and Intelligent Systems, BEng, 2022.09-2026.07, major rank 4/60.
+- CET-6; university scholarships in three consecutive years; Excellent Student and Excellent Graduate.
 - Provincial second prize, Tianjin New Engineering Practice Innovation Competition; university first prize, Electronic Design Innovation Practice Competition; two Challenge Cup campus third prizes.
 
 ## Contact

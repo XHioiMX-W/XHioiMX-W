@@ -1,4 +1,6 @@
-# Huiyan Shizhu: YOLO crop inspection robot
+# “慧眼识株”–基于YOLO机器视觉农作物病虫害智能识别监测预警农保机器人
+
+**Huiyan Shizhu | YOLO crop pest/disease inspection and early-warning agricultural-protection robot**
 
 ## Problem
 
@@ -15,6 +17,13 @@ STM32F103C8T6 <- sensors/actuators -> BC28 NB-IoT -> Alibaba Cloud IoT
 2. STM32F103C8T6 owns sensor sampling, actuator drivers, state machine and serial debug. BC28 carries telemetry and cloud commands over NB-IoT.
 3. The sensing set covers air temperature, humidity, pressure, soil moisture and illumination. The open-hub wheel improves mobility in soft fields.
 4. I worked across the IoT link, embedded inference deployment, control integration and mechanical/kinematic validation.
+
+## My role
+
+- Built the IoT telemetry and remote-command integration path.
+- Deployed and optimized the exported YOLO model for Raspberry Pi edge inference.
+- Integrated the STM32 control layer with sensing, actuation and serial-debug workflows.
+- Supported appearance/structure work, inverse kinematics and stability validation for the field robot.
 
 ## Evidence
 

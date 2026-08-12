@@ -1,4 +1,6 @@
-# Zhijing Suiyu: LSTM+CNN indoor environment control robot
+# 科技发明制作-12-智境·随驭-AI 驱动的室内环境个性化调控机器人
+
+**Zhijing Suiyu | LSTM+CNN indoor environment personalization and control robot**
 
 ## Overview
 
@@ -10,6 +12,12 @@ Closed-loop robot from sensing to time-series forecasting to fan/humidifier actu
 - STM32F405RGT6 handles sensor polling, periodic tasks, serial protocol, PWM outputs and fault states. SHT30/SGP30 use I2C.
 - Sensor, power and actuator boards are separated for testability. Power and control zones reduce actuator noise in sampled data.
 - Cloud telemetry and dashboard plots expose prediction residuals for tuning and validation.
+
+## My role
+
+- Deployed and debugged the LSTM+CNN time-series prediction workflow for environmental forecasting.
+- Developed the mobile chassis, integrated multi-sensor circuits, and designed the sensor, power and actuator PCBs.
+- Implemented MCU software and completed hardware/software commissioning from sensing to actuation.
 
 ## PCB showcase
 
