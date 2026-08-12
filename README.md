@@ -79,5 +79,4 @@ See [thesis](projects/thesis/README.md).
 ## Contact
 
 - Email: 1614450904@qq.com
-- Tel: 18203483370
 - Interests: embedded AI, mobile robots, multi-sensor fusion, edge intelligence, PCB and control systems.
