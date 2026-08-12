@@ -55,9 +55,16 @@ Comfortable using ScienceRAG and MiroFish for technical literature/knowledge org
 | --- | --- |
 | ![Thermal simulation overview](thermal-simulation-overview.png) | ![Thermal simulation detail](thermal-simulation-detail.png) |
 
-| Thermal-control board front | Thermal-control board under test |
-| --- | --- |
-| ![Thermal-control board front](thermal-control-board-front.jpg) | ![Thermal-control board under test](thermal-control-board-test.jpg) |
+<table>
+  <tr>
+    <th width="50%">Thermal-control board front (cropped)</th>
+    <th width="50%">Thermal-control board under test (cropped)</th>
+  </tr>
+  <tr>
+    <td><img src="thermal-control-board-front-cropped.jpg" alt="Cropped thermal-control PCB front view" width="100%"></td>
+    <td><img src="thermal-control-board-test-cropped.jpg" alt="Cropped thermal-control PCB under test" width="100%"></td>
+  </tr>
+</table>
 
 ## Confidentiality
 

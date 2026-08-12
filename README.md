@@ -57,9 +57,16 @@ Worked on an AI-controlled wearable thermal-management product that uses multi-m
 | --- | --- |
 | ![Thermal simulation overview](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-simulation-overview.png) | ![Thermal simulation detail](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-simulation-detail.png) |
 
-| Thermal-control board front | Thermal-control board under test |
-| --- | --- |
-| ![Thermal-control board front](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-front.jpg) | ![Thermal-control board under test](experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-test.jpg) |
+<table>
+  <tr>
+    <th width="50%">Thermal-control board front (cropped)</th>
+    <th width="50%">Thermal-control board under test (cropped)</th>
+  </tr>
+  <tr>
+    <td><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-front-cropped.jpg" alt="Cropped thermal-control PCB front view" width="100%"></td>
+    <td><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-test-cropped.jpg" alt="Cropped thermal-control PCB under test" width="100%"></td>
+  </tr>
+</table>
 
 See the [Beijing internship technical summary](experience/北京深镀科技-AI控温智能穿戴设备研发/README.md).
 
