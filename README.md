@@ -6,6 +6,13 @@ Embedded AI and robotics developer focused on turning algorithms into working ph
 
 > This public portfolio is curated from my resume, project reports, thesis, presentations and hardware evidence. Vendor SDKs, CMSIS, FreeRTOS and board-support packages are dependencies/reference material, not claimed as original work. Contact details are limited to email.
 
+## Start here
+
+- [Beijing internship: AI wearable thermal-control hardware](experience/北京深镀科技-AI控温智能穿戴设备研发/README.md)
+- [Project 1: 慧眼识株 agricultural inspection robot](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/README.md)
+- [Project 2: 智境·随驭 indoor environment control robot](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/README.md)
+- [Graduation thesis: wireless environmental monitoring robot](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/README.md)
+
 ## Technical map
 
 | Area | Technologies and engineering scope |
@@ -19,6 +26,15 @@ Embedded AI and robotics developer focused on turning algorithms into working ph
 | Scientific computing / AI | FEniCS finite-element solver, reduced-order modelling, latent-space acceleration, PINN, PINO, scientific ML and surrogate modelling |
 | AI research tooling | ScienceRAG, MiroFish, Hermes, Codex and structured technical-research workflows; Vibe coding for rapid prototyping, evaluation and iteration |
 | PCB / engineering tools | Lichuang EDA, schematic capture, placement/routing, power-tree design, DC-DC/LDO, Type-C, CH340C, Python and Linux |
+
+## Portfolio at a glance
+
+| Work | Engineering loop | Core stack | Primary evidence |
+| --- | --- | --- | --- |
+| 慧眼识株 | Visual inspection -> embedded decision -> actuation -> NB-IoT telemetry | YOLOv5-Lite, ONNX Runtime, Raspberry Pi, STM32F103, BC28 | Detection result, robot prototype, architecture |
+| 智境·随驭 | Multi-sensor sampling -> LSTM+CNN forecast -> feed-forward control | STM32F405, SHT30/SGP30, FreeRTOS, custom PCBs | Sensor/power/actuator PCBs, dashboard, architecture |
+| 毕业设计 | 3D perception + environmental monitoring + cloud alarm + voice HMI | ROS, Jetson Orin NX, LiDAR/depth camera, STM32F407, ESP32-S3, 4G | Robot system, annotated system map, PCB assemblies |
+| 北京深镀实习 | Multiphysics model -> fast scientific solve -> TEC/airflow hardware iteration | COMSOL, Fluent, FEniCS, ROM/latent space, PINN/PINO, PCB | CAD, CFD, thermal-control PCB, wearable layout |
 
 ## Beijing industry experience
 
@@ -37,6 +53,8 @@ Worked on an AI-controlled wearable thermal-management product that uses multi-m
 - **Neural operators and scientific AI:** explored PINN/PINO surrogates and physics-informed learning for field reconstruction, parameter sweeps and fast thermal-response estimation.
 - **Research engineering:** used ScienceRAG and MiroFish for technical knowledge organization, scenario analysis and experiment planning; used Hermes and Codex for Vibe coding, debugging, refactoring and rapid validation.
 - **Scope note:** product schematics, production firmware and commercial data are proprietary and are not included in this public repository.
+
+**Engineering emphasis:** the internship work connects geometry and multiphysics assumptions to manufacturable PCB hardware, embedded bring-up and a scientific-computing App. The public evidence is intentionally limited to non-confidential images and technical summaries.
 
 <table>
   <tr>
@@ -90,6 +108,8 @@ Designed as a low-cost field robot that joins Raspberry Pi vision inference, STM
 
 ![YOLO detection result](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/yolo-detection-result.png)
 
+*Evidence reading order: architecture shows the deployment path; the detection image shows the edge-vision output; the robot image shows the physical integration.*
+
 See [“慧眼识株”项目资料](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/README.md).
 
 ### 2. 科技发明制作-12-智境·随驭-AI 驱动的室内环境个性化调控机器人
@@ -111,6 +131,8 @@ Built a sensing-prediction-actuation control loop on custom PCBs and STM32 contr
 | System architecture | Cloud dashboard |
 | --- | --- |
 | ![System architecture](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/architecture.png) | ![Environment dashboard](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/dashboard.png) |
+
+*Evidence reading order: the three PCB images show modular hardware ownership; the architecture image shows data/control boundaries; the dashboard shows telemetry and tuning visibility.*
 
 See [智境·随驭项目资料](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/README.md).
 
@@ -137,6 +159,8 @@ Independently led the full-stack design of a distributed inspection robot for co
 ![Thesis robot](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system.png)
 
 ![Annotated thesis robot system showcase](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system-annotated.jpg)
+
+*Evidence reading order: the annotated system image maps physical modules; the PCB images expose board-level implementation; the ROS architecture and thesis document describe the software and test basis.*
 
 See [毕业设计项目资料](projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/README.md).
 
