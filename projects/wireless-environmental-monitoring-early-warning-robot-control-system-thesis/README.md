@@ -58,6 +58,8 @@ ESP32-S3 voice HMI -> dual mic + ES7210 + QSPI touch -> LLM agent
 
 ![Robot system](robot-system.png)
 
+![Annotated robot system showcase](robot-system-annotated.jpg)
+
 ![ROS architecture](ros-architecture.png)
 
 ## Deliverables
