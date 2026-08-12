@@ -45,7 +45,7 @@ Worked on an AI-controlled wearable thermal-management product that uses multi-m
   </tr>
   <tr>
     <td width="65%"><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/industry-wearable-application.png" alt="Industry wearable application" width="100%"></td>
-    <td width="35%" align="center"><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-sensor-layout-rotated.jpg" alt="Wearable sensor and airflow layout rotated 90 degrees counter-clockwise" width="72%"></td>
+    <td width="35%" align="center"><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-sensor-layout-rotated.jpg" alt="Wearable sensor and airflow layout rotated 90 degrees counter-clockwise" width="100%"></td>
   </tr>
 </table>
 

@@ -43,7 +43,7 @@ Comfortable using ScienceRAG and MiroFish for technical literature/knowledge org
   </tr>
   <tr>
     <td width="65%"><img src="industry-wearable-application.png" alt="Industry wearable application" width="100%"></td>
-    <td width="35%" align="center"><img src="wearable-sensor-layout-rotated.jpg" alt="Wearable sensor and airflow layout rotated 90 degrees counter-clockwise" width="72%"></td>
+    <td width="35%" align="center"><img src="wearable-sensor-layout-rotated.jpg" alt="Wearable sensor and airflow layout rotated 90 degrees counter-clockwise" width="100%"></td>
   </tr>
 </table>
 
