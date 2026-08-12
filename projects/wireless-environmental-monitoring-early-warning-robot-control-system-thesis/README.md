@@ -14,6 +14,14 @@ STM32 chassis controller -> closed-loop motion / independent suspension
 STM32F407VET6 IoT gateway -> SHT30 + SGP30 + dual T/RH sensing -> EC801E 4G -> HTTP POST JSON -> ThingsBoard
 ESP32-S3 voice HMI -> dual mic + ES7210 + QSPI touch -> LLM agent
 
+## End-to-end data path
+
+`LiDAR/depth camera -> ROS time-space alignment and EKF -> 3D SLAM/local planning -> chassis control`
+
+`SHT30/SGP30 + dual T/RH -> STM32F407 anomaly logic -> EC801E 4G -> HTTP POST JSON -> ThingsBoard alarms`
+
+`dual microphones + ES7210 + QSPI touch -> ESP32-S3 FreeRTOS interaction -> voice/LLM-agent command path`
+
 ## Hardware design
 
 ### Environmental IoT mainboard
@@ -47,6 +55,13 @@ ESP32-S3 voice HMI -> dual mic + ES7210 + QSPI touch -> LLM agent
 - Sliding window + temperature rate + static thresholds + trend fitting for anomaly localization and over-limit alarms.
 - 1 s periodic acquisition, OLED page rotation, sensor calibration and HTTP POST JSON telemetry.
 - FreeRTOS-based long-lived full-duplex voice interaction and LLM agent control on ESP32-S3.
+
+## Validation focus
+
+- Powered up and commissioned both custom boards, including regulated power rails, programming/debug interfaces, sensors and display/audio peripherals.
+- Used synchronized perception streams and EKF-based pose estimation as the basis for SLAM and local obstacle planning.
+- Checked the monitoring path with periodic acquisition, calibration, sliding-window trend logic and remote alarm delivery.
+- Evaluated the voice path as a long-lived FreeRTOS interaction rather than a one-shot demo.
 
 ## My role
 
