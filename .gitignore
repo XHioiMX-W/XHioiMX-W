@@ -1,0 +1,9 @@
+# Local curation intermediates. They are not part of the public portfolio.
+assets/
+project1.pptx
+project2.pptx
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+*.tmp
