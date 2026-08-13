@@ -1,0 +1,47 @@
+(() => {
+  const translations = {
+    en: {
+      "software.skip": "Skip to software and design work", "software.nav.home": "Home", "software.nav.software": "Software", "software.nav.simulation": "Scientific AI", "software.nav.design": "Design systems", "software.kicker": "SOFTWARE & DESIGN LAB", "software.title": "Software that explains the hardware.", "software.lead": "I build the models, control paths, simulation tools and product interfaces that turn sensing hardware into a usable system.", "software.stat1": "capability tracks", "software.stat2": "evidence artifacts", "software.stat3": "from model to prototype", "software.noteLabel": "BUILDING LOGIC", "software.note": "Every software block is tied to a physical signal, a testable output or a design decision.", "software.explore": "Explore capability tracks", "software.capabilityKicker": "CAPABILITY TRACKS", "software.capabilityTitle": "Models, middleware and interfaces with a job to do.", "software.capabilityNote": "The work is organized around engineering outcomes: inference, autonomy, control and fast iteration", "software.edge.title": "Edge AI & vision", "software.edge.description": "Compact models and reliable inference paths for field inspection, from YOLOv5-Lite compression to Raspberry Pi deployment.", "software.edge.link": "View inference evidence", "software.robot.title": "Robotics middleware & IoT", "software.robot.description": "ROS nodes, EKF alignment, 3D SLAM, local planning and telemetry paths that connect autonomous decisions to real actuators.", "software.robot.link": "View ROS architecture", "software.forecast.title": "Forecasting & control", "software.forecast.description": "LSTM+CNN time-series workflows with windowing, normalization, residual analysis and forecast-aware feed-forward control.", "software.forecast.link": "View tuning dashboard", "software.vibe.title": "Research tooling & Vibe coding", "software.vibe.description": "ScienceRAG, MiroFish, Hermes and Codex support structured research, scenario analysis, rapid prototyping and debugging.", "software.vibe.link": "Read technical map", "software.simKicker": "SCIENTIFIC AI", "software.simTitle": "Simulation becomes a reusable software tool.", "software.simNote": "The internship work combines multiphysics assumptions, finite elements and learned surrogates into a faster TEC design loop.", "software.sim.step1.title": "Define the fields", "software.sim.step1.description": "COMSOL and Fluent workflows cover electromagnetic, electric-potential, electrothermal and CFD/TEC cases.", "software.sim.step2.title": "Solve with physics", "software.sim.step2.description": "FEniCS finite-element models provide the trusted baseline for geometry, materials, sources and boundary conditions.", "software.sim.step3.title": "Accelerate the loop", "software.sim.step3.description": "Reduced-order models, latent spaces, PINN and PINO surrogates shorten parameter sweeps and design iteration.", "software.sim.figure1": "Multiphysics field overview", "software.sim.figure2": "Airflow and thermal-flow model", "software.designKicker": "PRODUCT & SYSTEM DESIGN", "software.designTitle": "Design decisions that survive contact with hardware.", "software.designNote": "Mechanical layout, interface hierarchy and visual communication are treated as part of the engineering system.", "software.design.cad.label": "MECHANICAL SYSTEM", "software.design.cad.title": "Wearable CAD and packaging", "software.design.cad.description": "3D assembly modelling balances component placement, airflow packaging, thermal constraints and manufacturable enclosure decisions.", "software.design.product.label": "PRODUCT CONTEXT", "software.design.product.title": "From prototype to product story", "software.design.product.description": "The interface between technical evidence and a product scenario makes the system legible to users and stakeholders.", "software.design.dashboard.label": "DATA INTERFACE", "software.design.dashboard.title": "Dashboards for tuning", "software.design.dashboard.description": "Telemetry, prediction residuals and control state become visible decisions instead of hidden logs.", "software.footer.kicker": "SOFTWARE & DESIGN", "software.footer.title": "From algorithm to interface to physical result.", "software.footer.back": "Back to portfolio", "software.footer.meta": "Software · Scientific AI · Product design"
+    },
+    zh: {
+      "software.skip": "跳转到软件与设计项目", "software.nav.home": "主页", "software.nav.software": "软件能力", "software.nav.simulation": "科学智能", "software.nav.design": "设计系统", "software.kicker": "软件与设计实验室", "software.title": "用软件解释硬件，让系统真正可用。", "software.lead": "我构建模型、控制链路、仿真工具和产品界面，把感知硬件组织成可运行、可验证的系统。", "software.stat1": "能力方向", "software.stat2": "证据产物", "software.stat3": "从模型到样机", "software.noteLabel": "工程逻辑", "software.note": "每个软件模块都对应物理信号、可测试输出或明确的设计决策。", "software.explore": "浏览软件能力", "software.capabilityKicker": "能力方向", "software.capabilityTitle": "让模型、中间件和界面各司其职。", "software.capabilityNote": "围绕推理、自主、控制和快速迭代组织软件能力。", "software.edge.title": "边缘 AI 与视觉", "software.edge.description": "面向田间巡检的轻量模型与可靠推理链路，覆盖 YOLOv5-Lite 压缩、ONNX Runtime 和树莓派部署。", "software.edge.link": "查看推理证据", "software.robot.title": "机器人中间件与物联网", "software.robot.description": "ROS 节点、EKF 对齐、3D SLAM、局部规划和遥测链路，把自主决策连接到真实执行器。", "software.robot.link": "查看 ROS 架构", "software.forecast.title": "预测与控制", "software.forecast.description": "LSTM+CNN 时间序列流程覆盖窗口化、归一化、残差分析和预测前馈控制。", "software.forecast.link": "查看调参看板", "software.vibe.title": "科研工具与 Vibe coding", "software.vibe.description": "使用 ScienceRAG、MiroFish、Hermes 和 Codex 进行结构化研究、场景分析、快速原型和调试。", "software.vibe.link": "查看技术地图", "software.simKicker": "科学智能", "software.simTitle": "让仿真成为可复用的软件工具。", "software.simNote": "实习工作将多物理场假设、有限元求解和学习型代理模型组织成更快的 TEC 设计闭环。", "software.sim.step1.title": "定义物理场", "software.sim.step1.description": "使用 COMSOL 与 Fluent 覆盖电磁场、电势场、电热场和 CFD/TEC 工况。", "software.sim.step2.title": "用物理求解", "software.sim.step2.description": "以 FEniCS 有限元模型作为可信基线，管理几何、材料、热源和边界条件。", "software.sim.step3.title": "加速设计迭代", "software.sim.step3.description": "通过降阶模型、潜空间、PINN 和 PINO 代理缩短参数扫描与方案比较。", "software.sim.figure1": "多物理场概览", "software.sim.figure2": "气流与热流模型", "software.designKicker": "产品与系统设计", "software.designTitle": "经得起硬件验证的设计决策。", "software.designNote": "机械布局、界面层级和视觉表达都作为工程系统的一部分处理。", "software.design.cad.label": "机械系统", "software.design.cad.title": "穿戴设备 CAD 与封装", "software.design.cad.description": "通过 3D 装配平衡器件布局、气流封装、热约束和可制造结构。", "software.design.product.label": "产品场景", "software.design.product.title": "从样机到产品叙事", "software.design.product.description": "把技术证据放入产品场景，让用户和协作者理解系统价值。", "software.design.dashboard.label": "数据界面", "software.design.dashboard.title": "面向调参的看板", "software.design.dashboard.description": "把遥测、预测残差和控制状态转化为可见的工程决策，而不是隐藏日志。", "software.footer.kicker": "软件与设计", "software.footer.title": "从算法、界面，到真实物理结果。", "software.footer.back": "返回主页", "software.footer.meta": "软件 · 科学智能 · 产品设计"
+    }
+  };
+  const nav = document.querySelector('.site-nav');
+  const menu = document.querySelector('.menu-toggle');
+  const toggle = document.querySelector('[data-language-toggle]');
+  let currentLanguage = 'en';
+  const apply = (language) => {
+    currentLanguage = language;
+    const dictionary = translations[language] || translations.en;
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-i18n]').forEach((element) => { if (dictionary[element.dataset.i18n] !== undefined) element.textContent = dictionary[element.dataset.i18n]; });
+    toggle?.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : 'Switch to Chinese');
+    toggle?.setAttribute('data-tooltip', language === 'zh' ? 'English' : 'Chinese');
+    toggle?.classList.toggle('is-zh', language === 'zh');
+    document.title = language === 'zh' ? '王宣淏 | 软件与设计实验室' : 'Xuanhao Wang | Software & Design Lab';
+  };
+  toggle?.addEventListener('click', () => apply(document.documentElement.lang === 'zh-CN' ? 'en' : 'zh'));
+  menu?.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open
+      ? (currentLanguage === 'zh' ? '关闭软件导航' : 'Close software navigation')
+      : (currentLanguage === 'zh' ? '打开软件导航' : 'Open software navigation'));
+    menu.querySelector('[data-lucide]')?.setAttribute('data-lucide', open ? 'x' : 'menu');
+    if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.8 } });
+  });
+  nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { nav.classList.remove('is-open'); menu?.setAttribute('aria-expanded', 'false'); }));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav?.classList.contains('is-open')) {
+      nav.classList.remove('is-open');
+      menu?.setAttribute('aria-expanded', 'false');
+      menu?.setAttribute('aria-label', currentLanguage === 'zh' ? '打开软件导航' : 'Open software navigation');
+      menu?.querySelector('[data-lucide]')?.setAttribute('data-lucide', 'menu');
+      if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.8 } });
+      menu?.focus();
+    }
+  });
+  if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.8 } });
+  apply('en');
+})();
