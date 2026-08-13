@@ -8,6 +8,7 @@ Embedded AI and robotics developer focused on turning algorithms into working ph
 
 ## Start here
 
+- [Interactive engineering portfolio](index.html)
 - [Beijing internship: AI wearable thermal-control hardware](experience/北京深镀科技-AI控温智能穿戴设备研发/README.md)
 - [Project 1: 慧眼识株 agricultural inspection robot](projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/README.md)
 - [Project 2: 智境·随驭 indoor environment control robot](projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/README.md)
