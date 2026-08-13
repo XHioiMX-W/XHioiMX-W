@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Xuanhao Wang's engineering portfolio: embedded AI, robotics, PCB hardware, IoT systems and scientific computing."
+    >
+    <meta name="theme-color" content="#101413">
+    <title>Xuanhao Wang | Engineering Portfolio</title>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to work</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">XW</span>
+        <span>XUANHAO WANG</span>
+      </a>
+      <nav class="site-nav" aria-label="Portfolio sections">
+        <a href="#overview" class="is-active">Overview</a>
+        <a href="#work">Work</a>
+        <a href="#systems">Systems</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a
+        class="icon-button github-button"
+        href="https://github.com/XHioiMX-W"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Open GitHub profile"
+        data-tooltip="GitHub profile"
+      >
+        <i data-lucide="github" aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> EMBEDDED AI · ROBOTICS · HARDWARE</p>
+          <h1 id="hero-title">Engineering intelligence that works in the physical world.</h1>
+          <p class="hero-lead">
+            I design the chain from custom PCB and MCU firmware to edge inference, cloud telemetry,
+            mobile robots and thermal-control systems.
+          </p>
+          <div class="identity-line">
+            <span>MS Control Science &amp; Engineering</span>
+            <span>Beijing University of Civil Engineering and Architecture</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              <i data-lucide="arrow-down-right" aria-hidden="true"></i>
+              Explore selected work
+            </a>
+            <a class="button button-secondary" href="README.md">
+              <i data-lucide="file-text" aria-hidden="true"></i>
+              Read technical portfolio
+            </a>
+          </div>
+          <ul class="skill-pills" aria-label="Key skills">
+            <li>STM32 + ESP32-S3</li>
+            <li>ROS + 3D SLAM</li>
+            <li>PCB + bring-up</li>
+            <li>YOLO + ONNX Runtime</li>
+            <li>COMSOL + FEniCS</li>
+          </ul>
+        </div>
+
+        <div class="hero-evidence" aria-label="Engineering evidence">
+          <figure class="hero-primary image-panel">
+            <img
+              src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system-annotated.jpg"
+              alt="Annotated environmental monitoring and inspection robot"
+            >
+            <figcaption>
+              <span class="figure-kicker">GRADUATION DESIGN · 2026</span>
+              <strong>Wireless environmental monitoring &amp; early-warning robot</strong>
+            </figcaption>
+          </figure>
+          <div class="evidence-strip">
+            <figure class="mini-evidence">
+              <img
+                src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-front-cropped.jpg"
+                alt="Thermal-control PCB front view"
+              >
+              <figcaption><span>PCB hardware</span><strong>TEC control board</strong></figcaption>
+            </figure>
+            <figure class="mini-evidence">
+              <img
+                src="projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/yolo-detection-result.png"
+                alt="YOLO disease and pest detection result"
+              >
+              <figcaption><span>Edge AI</span><strong>YOLOv5-Lite inference</strong></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band" id="overview" aria-label="Engineering profile">
+        <div class="section-shell proof-grid">
+          <div class="proof-statement">
+            <p class="eyebrow"><span></span> WORKING METHOD</p>
+            <h2>Evidence first. Full system ownership.</h2>
+            <p>
+              My portfolio is organized around real hardware, software paths and testable artifacts.
+              Each project traces from a physical problem to an implemented system.
+            </p>
+          </div>
+          <dl class="proof-stats">
+            <div>
+              <dt>03</dt>
+              <dd>major robot systems</dd>
+            </div>
+            <div>
+              <dt>04</dt>
+              <dd>custom PCB families</dd>
+            </div>
+            <div>
+              <dt>01</dt>
+              <dd>industry thermal-control internship</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> SELECTED WORK</p>
+            <h2 id="work-title">Systems built around sensing, decision and actuation.</h2>
+          </div>
+          <p class="section-note">Open a project for the complete engineering record, figures and source materials.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-row">
+            <div class="project-index">01</div>
+            <div class="project-image">
+              <img
+                src="projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/yolo-detection-result.png"
+                alt="YOLO crop disease and pest detection interface"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-type">EDGE VISION · NB-IOT · ROBOTICS</p>
+              <h3>慧眼识株</h3>
+              <p>
+                Agricultural inspection robot that combines Raspberry Pi edge vision, STM32 sensing and
+                actuation, and BC28 NB-IoT remote supervision for crop pest and disease monitoring.
+              </p>
+              <ul class="project-tags">
+                <li>YOLOv5-Lite</li>
+                <li>ONNX Runtime</li>
+                <li>STM32F103</li>
+                <li>Alibaba Cloud IoT</li>
+              </ul>
+              <a class="text-link" href="projects/huiyan-shizhu-yolo-crop-pest-disease-inspection-robot/README.md">
+                View project record <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-row project-row-reverse">
+            <div class="project-index">02</div>
+            <div class="project-image pcb-stack">
+              <img
+                src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/sensor-pcb.png"
+                alt="Indoor environment control robot sensor PCB"
+              >
+              <img
+                src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/dashboard.png"
+                alt="Environmental control system dashboard"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-type">TIME-SERIES AI · CUSTOM PCB · CONTROL</p>
+              <h3>智境·随驭</h3>
+              <p>
+                Indoor environment personalization robot that moves from multi-sensor sampling to LSTM+CNN
+                forecasting and feed-forward fan or humidifier control.
+              </p>
+              <ul class="project-tags">
+                <li>LSTM + CNN</li>
+                <li>STM32F405</li>
+                <li>FreeRTOS</li>
+                <li>SHT30 / SGP30</li>
+              </ul>
+              <a class="text-link" href="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/README.md">
+                View project record <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-index">03</div>
+            <div class="project-image">
+              <img
+                src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/robot-system-annotated.jpg"
+                alt="Annotated graduation design inspection robot"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-type">GRADUATION DESIGN · ROS · 4G · VOICE HMI</p>
+              <h3>Wireless monitoring robot</h3>
+              <p>
+                Full-stack inspection robot for complex environments: 3D perception and local planning,
+                environmental anomaly monitoring, 4G cloud alarms and an on-device voice interface.
+              </p>
+              <ul class="project-tags">
+                <li>Jetson Orin NX</li>
+                <li>ROS + EKF</li>
+                <li>STM32F407</li>
+                <li>ESP32-S3</li>
+              </ul>
+              <a class="text-link" href="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/README.md">
+                View thesis record <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-row project-row-reverse">
+            <div class="project-index">04</div>
+            <div class="project-image pcb-stack thermal-stack">
+              <img
+                src="experience/北京深镀科技-AI控温智能穿戴设备研发/wearable-cfd-simulation.png"
+                alt="Wearable thermal-flow simulation"
+              >
+              <img
+                src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-test-cropped.jpg"
+                alt="Thermal-control board under test"
+              >
+            </div>
+            <div class="project-content">
+              <p class="project-type">INDUSTRY INTERNSHIP · THERMAL CONTROL · SCIENTIFIC AI</p>
+              <h3>AI wearable thermal control</h3>
+              <p>
+                Multiphysics and hardware work for an AI-controlled wearable thermal-management product,
+                from CAD and CFD evidence to TEC control PCB bring-up and accelerated simulation workflows.
+              </p>
+              <ul class="project-tags">
+                <li>COMSOL</li>
+                <li>ANSYS Fluent</li>
+                <li>FEniCS</li>
+                <li>PINN / PINO</li>
+              </ul>
+              <a class="text-link" href="experience/北京深镀科技-AI控温智能穿戴设备研发/README.md">
+                View internship record <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="systems-band" id="systems" aria-labelledby="systems-title">
+        <div class="section-shell">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow"><span></span> ENGINEERING LAYERS</p>
+              <h2 id="systems-title">One system, connected from sensing to decision.</h2>
+            </div>
+            <p class="section-note">These layers recur across the agricultural robot, indoor-control robot, graduation design and wearable thermal system.</p>
+          </div>
+          <div class="system-grid">
+            <article>
+              <span class="system-number">01</span>
+              <i data-lucide="circuit-board" aria-hidden="true"></i>
+              <h3>Hardware</h3>
+              <p>Power trees, sensor interfaces, PCB placement/routing, EMC-aware separation and board bring-up.</p>
+              <span>STM32 · ESP32 · Type-C · I2C · PWM · ADC</span>
+            </article>
+            <article>
+              <span class="system-number">02</span>
+              <i data-lucide="scan-line" aria-hidden="true"></i>
+              <h3>Perception &amp; models</h3>
+              <p>Edge vision, time-series forecasting, LiDAR/depth fusion and field reconstruction informed by physics.</p>
+              <span>YOLO · LSTM/CNN · EKF · PINN/PINO</span>
+            </article>
+            <article>
+              <span class="system-number">03</span>
+              <i data-lucide="waypoints" aria-hidden="true"></i>
+              <h3>Control &amp; robotics</h3>
+              <p>Closed-loop motion, periodic embedded tasks, thermal control and local navigation around real constraints.</p>
+              <span>ROS · FreeRTOS · 3D SLAM · TEC</span>
+            </article>
+            <article>
+              <span class="system-number">04</span>
+              <i data-lucide="radio-tower" aria-hidden="true"></i>
+              <h3>Cloud &amp; validation</h3>
+              <p>Telemetry, alarms, dashboards, residual analysis and simulation-to-hardware iteration.</p>
+              <span>4G / NB-IoT · HTTP JSON · ThingsBoard</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section section-shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> SKILLS, AS EVIDENCED</p>
+            <h2 id="skills-title">Tools used in working systems, not isolated checkboxes.</h2>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <article>
+            <p class="skill-group">Embedded systems</p>
+            <ul>
+              <li>STM32F0 / F1 / F4, ESP32-S3, 51 MCU</li>
+              <li>C/C++, STM32 HAL, FreeRTOS, Keil, CubeIDE</li>
+              <li>UART, I2C, SPI, PWM, ADC and board bring-up</li>
+            </ul>
+          </article>
+          <article>
+            <p class="skill-group">AI &amp; scientific computing</p>
+            <ul>
+              <li>YOLOv5-Lite, ONNX Runtime, OpenCV</li>
+              <li>LSTM/CNN forecasting and residual analysis</li>
+              <li>FEniCS, reduced-order models, latent space, PINN/PINO</li>
+            </ul>
+          </article>
+          <article>
+            <p class="skill-group">Robotics &amp; connected devices</p>
+            <ul>
+              <li>ROS, LiDAR/depth fusion, EKF, 3D SLAM</li>
+              <li>BC28 NB-IoT, EC801E Cat-1 4G, ThingsBoard</li>
+              <li>HTTP POST, JSON telemetry and remote command paths</li>
+            </ul>
+          </article>
+          <article>
+            <p class="skill-group">Hardware &amp; multiphysics</p>
+            <ul>
+              <li>Lichuang EDA, power-tree design, DC-DC/LDO</li>
+              <li>COMSOL electrothermal / CFD, ANSYS Fluent, CAD</li>
+              <li>TEC, NTC, fans, multi-sensor integration</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="section-shell footer-content">
+        <div>
+          <p class="eyebrow"><span></span> CONTACT</p>
+          <h2>Open to embedded AI, robotics and intelligent-hardware work.</h2>
+        </div>
+        <div class="footer-links">
+          <a class="footer-mail" href="mailto:1614450904@qq.com">1614450904@qq.com <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="https://github.com/XHioiMX-W" target="_blank" rel="noreferrer">GitHub <i data-lucide="github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="section-shell footer-meta">
+        <span>© 2026 Xuanhao Wang</span>
+        <span>Embedded AI · Robotics · PCB hardware · IoT systems</span>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
