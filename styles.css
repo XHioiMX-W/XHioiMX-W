@@ -103,6 +103,14 @@ img { display: block; max-width: 100%; }
 .site-nav a.is-active::after { background: var(--accent); }
 
 .header-actions { display: flex; justify-self: end; align-items: center; gap: 9px; }
+.language-toggle { position: relative; display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 0 9px; border: 1px solid var(--line); color: var(--muted); background: transparent; cursor: pointer; font: 700 10px var(--mono); letter-spacing: 0.04em; transition: border-color 160ms ease, color 160ms ease, background 160ms ease; }
+.language-toggle:hover, .language-toggle:focus-visible { border-color: var(--accent); color: var(--accent); background: rgba(114, 225, 183, 0.08); }
+.language-toggle::after { position: absolute; top: calc(100% + 9px); right: 0; display: none; padding: 4px 7px; color: var(--ground); background: var(--accent); content: attr(data-tooltip); font: 600 10px var(--mono); white-space: nowrap; }
+.language-toggle:hover::after { display: block; }
+.language-label-en { color: var(--accent); }
+.language-toggle.is-zh .language-label-en { color: var(--muted); }
+.language-toggle.is-zh .language-label-zh { color: var(--accent); }
+.language-divider { color: var(--faint); }
 .menu-toggle { display: none; cursor: pointer; }
 button { font: inherit; }
 
@@ -206,8 +214,9 @@ h1 { max-width: 750px; margin-bottom: 23px; font-size: clamp(42px, 5.15vw, 76px)
 .project-content > p:not(.project-type) { margin-bottom: 18px; color: var(--muted); font-size: 15px; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 0 0 22px; list-style: none; }
 .project-tags li { padding: 4px 7px; border: 1px solid var(--line-soft); color: #c3cdc6; font: 500 10px var(--mono); }
-.project-loop { display: flex; gap: 8px; margin: 0 0 21px; color: #cbd5ce; font: 500 11px/1.5 var(--mono); }
+.project-loop { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin: 0 0 21px; color: #cbd5ce; font: 500 11px/1.5 var(--mono); }
 .project-loop span { flex: 0 0 auto; color: var(--amber); font-weight: 700; letter-spacing: 0.08em; }
+.project-loop span:last-child { flex: 1 1 0; width: 0; min-width: 0; overflow-wrap: anywhere; }
 .text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 3px; font: 700 12px var(--mono); }
 .text-link svg { width: 15px; height: 15px; color: var(--accent); transition: transform 160ms ease; }
 .text-link:hover svg { transform: translate(2px, -2px); }
@@ -266,6 +275,8 @@ h1 { max-width: 750px; margin-bottom: 23px; font-size: clamp(42px, 5.15vw, 76px)
   :root { --shell: min(100% - 36px, 1280px); }
   .site-header { min-height: 60px; padding: 0 18px; }
   .github-button::after { display: none; }
+  .language-toggle { min-height: 30px; padding: 0 7px; }
+  .language-toggle::after { display: none; }
   .brand { font-size: 11px; }
   .brand-mark { width: 25px; height: 25px; }
   .hero { padding-top: 52px; padding-bottom: 48px; }
