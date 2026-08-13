@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#101413">
     <title>Xuanhao Wang | PCB Hardware Lab</title>
     <link rel="stylesheet" href="styles.css?v=3">
-    <link rel="stylesheet" href="pcb.css?v=4">
+    <link rel="stylesheet" href="pcb.css?v=5">
   </head>
   <body class="pcb-page">
     <a class="skip-link" href="#pcb-main" data-i18n="pcb.skip">Skip to PCB projects</a>
@@ -70,17 +70,30 @@
           </article>
         </div>
         <div class="board-proof-row"><img src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/sensor-board-assembled.png" alt="Environmental IoT mainboard assembled" loading="lazy" decoding="async"><img src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/voice-board-layout.png" alt="AI voice multimodal board layout" loading="lazy" decoding="async"><p data-i18n="pcb.thesis.proof">Layout and assembled evidence together show the path from interface definition to powered hardware.</p></div>
-        <div class="asset-gallery thesis-gallery" aria-label="Additional graduation design board evidence">
-          <figure class="asset-tile asset-tile-wide"><img src="pcb-assets/thesis-environmental-board-layout-top.png" alt="Environmental IoT mainboard top layout" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset1">Environmental IoT mainboard · top-layer routing</figcaption></figure>
-          <figure class="asset-tile"><img src="pcb-assets/thesis-environmental-board-3d-front.png" alt="Environmental IoT mainboard 3D front render" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset2">Environmental IoT mainboard · 3D front render</figcaption></figure>
-          <figure class="asset-tile"><img src="pcb-assets/thesis-environmental-board-3d-assembled.png" alt="Environmental IoT mainboard 3D assembled render" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset3">Environmental IoT mainboard · assembled 3D view</figcaption></figure>
-          <figure class="asset-tile"><img src="pcb-assets/thesis-environmental-board-assembled-photo.png" alt="Environmental IoT mainboard assembled photograph" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset4">Environmental IoT mainboard · powered prototype</figcaption></figure>
-          <figure class="asset-tile asset-tile-wide"><img src="pcb-assets/thesis-voice-board-layout.png" alt="AI voice board routing layout" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset5">AI voice board · routing layout</figcaption></figure>
-          <figure class="asset-tile asset-tile-wide"><img src="pcb-assets/thesis-voice-board-layout-magenta.png" alt="AI voice board rendered layout" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset6">AI voice board · rendered layer view</figcaption></figure>
-          <figure class="asset-tile"><img src="pcb-assets/thesis-voice-board-footprint.png" alt="AI voice board footprint and fabrication view" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset7">AI voice board · footprint/fabrication view</figcaption></figure>
-          <figure class="asset-tile"><img src="pcb-assets/thesis-voice-board-3d-assembled.png" alt="AI voice board 3D assembled render" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset8">AI voice board · 3D assembled view</figcaption></figure>
-          <figure class="asset-tile"><img src="pcb-assets/thesis-voice-board-assembled-photo.png" alt="AI voice board assembled photograph" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset9">AI voice board · assembled prototype</figcaption></figure>
-          <figure class="asset-tile asset-tile-system"><img src="pcb-assets/thesis-integrated-hardware-demo.png" alt="Integrated AI voice hardware demonstration" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thesis.asset10">Integrated hardware · display, audio and controller bring-up</figcaption></figure>
+        <div class="evidence-card-grid" aria-label="Additional graduation design board evidence">
+          <article class="board-card evidence-card">
+            <div class="evidence-media evidence-media-four">
+              <img class="evidence-main" src="pcb-assets/thesis-environmental-board-layout-top.png" alt="Environmental IoT mainboard top layout" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-environmental-board-3d-front.png" alt="Environmental IoT mainboard 3D front render" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-environmental-board-3d-assembled.png" alt="Environmental IoT mainboard 3D assembled render" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-environmental-board-assembled-photo.png" alt="Environmental IoT mainboard assembled photograph" loading="lazy" decoding="async">
+            </div>
+            <div class="board-card-body"><span class="board-label" data-i18n="pcb.thesis.envEvidenceLabel">DESIGN → ASSEMBLY</span><h3 data-i18n="pcb.thesis.envEvidenceTitle">Environmental board evidence chain</h3><p data-i18n="pcb.thesis.envEvidenceDescription">Top-layer routing, fabrication render, populated 3D view and powered hardware record the board from layout to bring-up.</p><div class="board-tags"><span>PCB layout</span><span>3D assembly</span><span>Bring-up</span></div></div>
+          </article>
+          <article class="board-card evidence-card">
+            <div class="evidence-media evidence-media-five">
+              <img class="evidence-main" src="pcb-assets/thesis-voice-board-layout.png" alt="AI voice board routing layout" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-voice-board-layout-magenta.png" alt="AI voice board rendered layout" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-voice-board-footprint.png" alt="AI voice board footprint and fabrication view" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-voice-board-3d-assembled.png" alt="AI voice board 3D assembled render" loading="lazy" decoding="async">
+              <img src="pcb-assets/thesis-voice-board-assembled-photo.png" alt="AI voice board assembled photograph" loading="lazy" decoding="async">
+            </div>
+            <div class="board-card-body"><span class="board-label" data-i18n="pcb.thesis.voiceEvidenceLabel">ROUTING → PROTOTYPE</span><h3 data-i18n="pcb.thesis.voiceEvidenceTitle">Voice board evidence chain</h3><p data-i18n="pcb.thesis.voiceEvidenceDescription">Routing layers, footprint verification, assembled rendering and physical hardware show the complete ESP32-S3 voice-interface implementation.</p><div class="board-tags"><span>ESP32-S3</span><span>Audio ADC</span><span>Display HMI</span></div></div>
+          </article>
+          <article class="board-card evidence-card evidence-card-wide">
+            <div class="evidence-media evidence-media-system"><img src="pcb-assets/thesis-integrated-hardware-demo.png" alt="Integrated AI voice hardware demonstration" loading="lazy" decoding="async"></div>
+            <div class="board-card-body"><span class="board-label" data-i18n="pcb.thesis.systemEvidenceLabel">SYSTEM INTEGRATION</span><h3 data-i18n="pcb.thesis.systemEvidenceTitle">Display, audio and controller bring-up</h3><p data-i18n="pcb.thesis.systemEvidenceDescription">The final integration connects the round display, microphones, speaker and powered control board as one voice-interaction hardware path.</p><div class="board-tags"><span>QSPI display</span><span>Dual microphone</span><span>Speaker</span><span>Power-on test</span></div></div>
+          </article>
         </div>
       </section>
 
@@ -92,10 +105,11 @@
             <article class="board-card"><div class="board-image"><img src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/power-pcb.png" alt="Power PCB" loading="lazy" decoding="async"></div><div class="board-card-body"><span class="board-label" data-i18n="pcb.zhijing.power.label">02 / POWER BOARD</span><h3 data-i18n="pcb.zhijing.power.title">Power and noise boundaries</h3><p data-i18n="pcb.zhijing.power.description">A dedicated power board keeps conversion and switching noise away from the sampled signals.</p><div class="board-tags"><span>DC-DC</span><span>LDO</span><span>Protection</span></div></div></article>
             <article class="board-card"><div class="board-image"><img src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/actuator-pcb.png" alt="Fan and humidifier actuator PCB" loading="lazy" decoding="async"></div><div class="board-card-body"><span class="board-label" data-i18n="pcb.zhijing.actuator.label">03 / ACTUATOR BOARD</span><h3 data-i18n="pcb.zhijing.actuator.title">Fan / humidifier drive</h3><p data-i18n="pcb.zhijing.actuator.description">PWM and relay outputs turn the LSTM+CNN forecast into physical environmental regulation.</p><div class="board-tags"><span>PWM</span><span>Relay</span><span>STM32F405</span></div></div></article>
           </div>
-          <div class="asset-gallery zhijing-gallery" aria-label="Additional Zhijing Suiyu board evidence">
-            <figure class="asset-tile asset-tile-wide"><img src="pcb-assets/zhijing-control-schematic.png" alt="Zhijing Suiyu control board schematic" loading="lazy" decoding="async"><figcaption data-i18n="pcb.zhijing.asset1">Control board · system schematic</figcaption></figure>
-            <figure class="asset-tile asset-tile-wide"><img src="pcb-assets/zhijing-control-board-layout.png" alt="Zhijing Suiyu control board PCB layout" loading="lazy" decoding="async"><figcaption data-i18n="pcb.zhijing.asset2">Control board · PCB layout and routing</figcaption></figure>
-            <figure class="asset-tile"><img src="pcb-assets/zhijing-control-board-assembled.png" alt="Zhijing Suiyu control board assembled" loading="lazy" decoding="async"><figcaption data-i18n="pcb.zhijing.asset3">Control board · assembled prototype</figcaption></figure>
+          <div class="evidence-card-grid evidence-card-grid-single" aria-label="Additional Zhijing Suiyu board evidence">
+            <article class="board-card evidence-card evidence-card-wide">
+              <div class="evidence-media evidence-media-three"><img class="evidence-main" src="pcb-assets/zhijing-control-schematic.png" alt="Zhijing Suiyu control board schematic" loading="lazy" decoding="async"><img src="pcb-assets/zhijing-control-board-layout.png" alt="Zhijing Suiyu control board PCB layout" loading="lazy" decoding="async"><img src="pcb-assets/zhijing-control-board-assembled.png" alt="Zhijing Suiyu control board assembled" loading="lazy" decoding="async"></div>
+              <div class="board-card-body"><span class="board-label" data-i18n="pcb.zhijing.evidenceLabel">SCHEMATIC → HARDWARE</span><h3 data-i18n="pcb.zhijing.evidenceTitle">Integrated control board development</h3><p data-i18n="pcb.zhijing.evidenceDescription">Power conversion, relay outputs, ESP12 Wi-Fi and STM32 control move from the complete schematic through dense routing to the assembled board.</p><div class="board-tags"><span>STM32</span><span>ESP12 Wi-Fi</span><span>Relay outputs</span><span>OLED</span></div></div>
+            </article>
           </div>
         </div>
       </section>
@@ -108,6 +122,6 @@
 
     <footer class="site-footer" id="contact"><div class="section-shell footer-content"><div><p class="eyebrow"><span></span> <span data-i18n="pcb.footer.kicker">PCB HARDWARE</span></p><h2 data-i18n="pcb.footer.title">From schematic boundaries to working boards.</h2></div><div class="footer-links"><a class="footer-mail" href="mailto:1614450904@qq.com">1614450904@qq.com <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="index.html" data-i18n="pcb.footer.back">Back to portfolio <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div><div class="section-shell footer-meta"><span>© 2026 Xuanhao Wang</span><span data-i18n="pcb.footer.meta">PCB hardware · Embedded systems · Robotics</span></div></footer>
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-    <script src="pcb.js?v=3"></script>
+    <script src="pcb.js?v=4"></script>
   </body>
 </html>
