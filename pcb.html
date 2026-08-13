@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xuanhao Wang's PCB hardware portfolio across robotics, environmental monitoring and TEC thermal control.">
+    <meta name="theme-color" content="#101413">
+    <title>Xuanhao Wang | PCB Hardware Lab</title>
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="pcb.css?v=2">
+  </head>
+  <body class="pcb-page">
+    <a class="skip-link" href="#pcb-main" data-i18n="pcb.skip">Skip to PCB projects</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Back to portfolio">
+        <span class="brand-mark" aria-hidden="true">XW</span>
+        <span>XUANHAO WANG</span>
+      </a>
+      <nav class="site-nav pcb-nav" id="pcb-nav" aria-label="PCB portfolio sections">
+        <a href="index.html" data-i18n="pcb.nav.home">Home</a>
+        <a href="#thesis" data-i18n="pcb.nav.thesis">Thesis boards</a>
+        <a href="#zhijing" data-i18n="pcb.nav.zhijing">Zhijing boards</a>
+        <a href="#thermal" data-i18n="pcb.nav.thermal">TEC board</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese" data-tooltip="Chinese">
+          <span class="language-label language-label-zh">ZH</span><span class="language-divider" aria-hidden="true">/</span><span class="language-label language-label-en">EN</span>
+        </button>
+        <a class="icon-button github-button" href="https://github.com/XHioiMX-W" target="_blank" rel="noreferrer" aria-label="Open GitHub profile" data-tooltip="GitHub profile">
+          <i data-lucide="github" aria-hidden="true"></i>
+        </a>
+        <button class="icon-button menu-toggle" type="button" aria-expanded="false" aria-controls="pcb-nav" aria-label="Open PCB navigation" data-tooltip="Menu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="pcb-main">
+      <section class="pcb-hero section-shell" aria-labelledby="pcb-title">
+        <div>
+          <p class="eyebrow"><span></span> <span data-i18n="pcb.kicker">PCB HARDWARE LAB</span></p>
+          <h1 id="pcb-title" data-i18n="pcb.title">Boards that carry the system.</h1>
+          <p class="pcb-lead" data-i18n="pcb.lead">A focused record of the custom boards I designed, assembled, powered up and integrated across robots and thermal-control hardware.</p>
+          <div class="pcb-stats" aria-label="PCB portfolio summary">
+            <div><strong>09</strong><span data-i18n="pcb.stat1">board-level evidence sets</span></div>
+            <div><strong>03</strong><span data-i18n="pcb.stat2">project families</span></div>
+            <div><strong>04</strong><span data-i18n="pcb.stat3">MCU and control domains</span></div>
+          </div>
+        </div>
+        <div class="pcb-hero-note">
+          <span data-i18n="pcb.heroNoteLabel">READ THE BOARDS</span>
+          <p data-i18n="pcb.heroNote">Layout shows ownership. Assembly shows bring-up. The system path explains why each interface exists.</p>
+          <a class="button button-primary" href="#thesis"><i data-lucide="arrow-down-right" aria-hidden="true"></i><span data-i18n="pcb.explore">Explore board families</span></a>
+        </div>
+      </section>
+
+      <section class="pcb-section section-shell" id="thesis" aria-labelledby="thesis-title">
+        <div class="pcb-section-heading">
+          <div><p class="eyebrow"><span></span> 01 · <span data-i18n="pcb.thesis.kicker">GRADUATION DESIGN</span></p><h2 id="thesis-title" data-i18n="pcb.thesis.title">Environmental IoT + voice multimodal boards</h2></div>
+          <p class="pcb-section-note" data-i18n="pcb.thesis.note">Two custom boards split sensing, gateway and voice interaction responsibilities across the inspection robot.</p>
+        </div>
+        <div class="board-grid board-grid-two">
+          <article class="board-card">
+            <div class="board-image"><img src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/sensor-board-layout.png" alt="Environmental IoT mainboard layout" loading="lazy" decoding="async"></div>
+            <div class="board-card-body"><span class="board-label" data-i18n="pcb.thesis.board1.label">LAYOUT / STM32F407</span><h3 data-i18n="pcb.thesis.board1.title">Environmental IoT mainboard</h3><p data-i18n="pcb.thesis.board1.description">Power rails, sensor interfaces and gateway connectivity for dual temperature-humidity monitoring, 4G telemetry and alarm logic.</p><div class="board-tags"><span>STM32F407VET6</span><span>SHT30 / SGP30</span><span>EC801E 4G</span></div></div>
+          </article>
+          <article class="board-card">
+            <div class="board-image"><img src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/voice-board-assembled.png" alt="AI voice multimodal board assembled" loading="lazy" decoding="async"></div>
+            <div class="board-card-body"><span class="board-label" data-i18n="pcb.thesis.board2.label">ASSEMBLED / ESP32-S3</span><h3 data-i18n="pcb.thesis.board2.title">AI voice multimodal board</h3><p data-i18n="pcb.thesis.board2.description">Audio capture, display and long-lived edge interaction in one board: dual microphones, ES7210 ADC and QSPI touch display.</p><div class="board-tags"><span>ESP32-S3</span><span>ES7210 ADC</span><span>QSPI touch</span></div></div>
+          </article>
+        </div>
+        <div class="board-proof-row"><img src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/sensor-board-assembled.png" alt="Environmental IoT mainboard assembled" loading="lazy" decoding="async"><img src="projects/wireless-environmental-monitoring-early-warning-robot-control-system-thesis/voice-board-layout.png" alt="AI voice multimodal board layout" loading="lazy" decoding="async"><p data-i18n="pcb.thesis.proof">Layout and assembled evidence together show the path from interface definition to powered hardware.</p></div>
+      </section>
+
+      <section class="pcb-section pcb-section-band" id="zhijing" aria-labelledby="zhijing-title">
+        <div class="section-shell">
+          <div class="pcb-section-heading"><div><p class="eyebrow"><span></span> 02 · <span data-i18n="pcb.zhijing.kicker">智境·随驭</span></p><h2 id="zhijing-title" data-i18n="pcb.zhijing.title">A modular control stack for indoor climate</h2></div><p class="pcb-section-note" data-i18n="pcb.zhijing.note">Three boards separate sensing, power conversion and actuator drive so each subsystem can be tested and tuned independently.</p></div>
+          <div class="board-grid board-grid-three">
+            <article class="board-card"><div class="board-image"><img src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/sensor-pcb.png" alt="Sensor PCB" loading="lazy" decoding="async"></div><div class="board-card-body"><span class="board-label" data-i18n="pcb.zhijing.sensor.label">01 / SENSOR BOARD</span><h3 data-i18n="pcb.zhijing.sensor.title">Multi-sensor acquisition</h3><p data-i18n="pcb.zhijing.sensor.description">I2C sensing for temperature, humidity and air-quality features feeding the forecast model.</p><div class="board-tags"><span>SHT30</span><span>SGP30</span><span>I2C</span></div></div></article>
+            <article class="board-card"><div class="board-image"><img src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/power-pcb.png" alt="Power PCB" loading="lazy" decoding="async"></div><div class="board-card-body"><span class="board-label" data-i18n="pcb.zhijing.power.label">02 / POWER BOARD</span><h3 data-i18n="pcb.zhijing.power.title">Power and noise boundaries</h3><p data-i18n="pcb.zhijing.power.description">A dedicated power board keeps conversion and switching noise away from the sampled signals.</p><div class="board-tags"><span>DC-DC</span><span>LDO</span><span>Protection</span></div></div></article>
+            <article class="board-card"><div class="board-image"><img src="projects/zhijing-suiyu-ai-indoor-environment-personalized-control-robot/actuator-pcb.png" alt="Fan and humidifier actuator PCB" loading="lazy" decoding="async"></div><div class="board-card-body"><span class="board-label" data-i18n="pcb.zhijing.actuator.label">03 / ACTUATOR BOARD</span><h3 data-i18n="pcb.zhijing.actuator.title">Fan / humidifier drive</h3><p data-i18n="pcb.zhijing.actuator.description">PWM and relay outputs turn the LSTM+CNN forecast into physical environmental regulation.</p><div class="board-tags"><span>PWM</span><span>Relay</span><span>STM32F405</span></div></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pcb-section section-shell" id="thermal" aria-labelledby="thermal-title">
+        <div class="pcb-section-heading"><div><p class="eyebrow"><span></span> 03 · <span data-i18n="pcb.thermal.kicker">BEIJING INTERNSHIP</span></p><h2 id="thermal-title" data-i18n="pcb.thermal.title">TEC control hardware for wearable thermal systems</h2></div><p class="pcb-section-note" data-i18n="pcb.thermal.note">The thermal-control board sits at the boundary between multiphysics simulation, TEC interfaces, sensing and prototype validation.</p></div>
+        <div class="thermal-board-layout"><article class="board-card thermal-main-card"><div class="board-image"><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-pcb-layout.png" alt="Thermal-control PCB layout" loading="lazy" decoding="async"></div><div class="board-card-body"><span class="board-label" data-i18n="pcb.thermal.layoutLabel">LAYOUT / TEC CONTROL</span><h3 data-i18n="pcb.thermal.layoutTitle">Thermal-control PCB</h3><p data-i18n="pcb.thermal.layoutDescription">A hardware handoff point for TEC, NTC and fan interfaces, with power and control paths aligned to the thermal design.</p><div class="board-tags"><span>TEC</span><span>NTC</span><span>Fan control</span><span>Lichuang EDA</span></div></div></article><div class="thermal-proof"><figure><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-front-cropped.jpg" alt="Thermal-control PCB front view" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thermal.front">Front view / assembled evidence</figcaption></figure><figure><img src="experience/北京深镀科技-AI控温智能穿戴设备研发/thermal-control-board-test-cropped.jpg" alt="Thermal-control PCB under test" loading="lazy" decoding="async"><figcaption data-i18n="pcb.thermal.test">Under test / power-on validation</figcaption></figure></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact"><div class="section-shell footer-content"><div><p class="eyebrow"><span></span> <span data-i18n="pcb.footer.kicker">PCB HARDWARE</span></p><h2 data-i18n="pcb.footer.title">From schematic boundaries to working boards.</h2></div><div class="footer-links"><a class="footer-mail" href="mailto:1614450904@qq.com">1614450904@qq.com <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="index.html" data-i18n="pcb.footer.back">Back to portfolio <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div><div class="section-shell footer-meta"><span>© 2026 Xuanhao Wang</span><span data-i18n="pcb.footer.meta">PCB hardware · Embedded systems · Robotics</span></div></footer>
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="pcb.js?v=2"></script>
+  </body>
+</html>
